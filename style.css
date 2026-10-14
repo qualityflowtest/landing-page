@@ -546,7 +546,7 @@ h2 {
 }
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
 }
 .feature-item {
@@ -582,6 +582,70 @@ h2 {
 .feature-item p {
     color: var(--text-muted);
     font-size: 0.95rem;
+}
+
+/* API & Mock Showcase */
+.api-mock-showcase {
+    padding: 100px 0;
+    background: rgba(255, 255, 255, 0.015);
+    border-top: 1px solid var(--border-light);
+}
+
+.api-mock-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.api-mock-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.api-mock-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.api-mock-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: var(--text-main);
+}
+
+.api-mock-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.api-mock-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.api-mock-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.api-mock-list li i {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
 }
 
 /* Testimonials */

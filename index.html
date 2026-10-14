@@ -28,6 +28,8 @@
             </div>
             <nav class="nav-links">
                 <a href="#features">Recursos</a>
+                <a href="#api-mock">API & Mocks</a>
+                <a href="#performance">Performance</a>
                 <a href="#pricing">Licenças</a>
             </nav>
             <div class="nav-actions">
@@ -128,6 +130,18 @@
                 </div>
                 
                 <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="send"></i></div>
+                    <h4>Validação de API & Contratos</h4>
+                    <p>Importe OpenAPI, cURL ou Postman. Valide schemas, status codes e encadeie variáveis dinâmicas em execuções em lote.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="server"></i></div>
+                    <h4>Mock Server Inteligente</h4>
+                    <p>Crie mocks em segundos e teste sem depender de backends em desenvolvimento ou APIs externas instáveis.</p>
+                </div>
+
+                <div class="feature-item reveal">
                     <div class="f-icon"><i data-lucide="layout-template"></i></div>
                     <h4>Validação Visual (Regression)</h4>
                     <p>Não dependa apenas de textos. O Flow-QA tira screenshots de botões e falha o teste se a cor ou layout quebrarem.</p>
@@ -154,8 +168,53 @@
         </div>
     </section>
 
+    <!-- API Validation & Mock Showcase -->
+    <section class="api-mock-showcase" id="api-mock">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="badge" style="margin-bottom: 15px;">Nova Geração ✨</div>
+                <h2>Validação de API & Mock Server Integrado</h2>
+                <p>Chega de depender de APIs externas instáveis ou atrasar testes esperando o backend ficar pronto. Crie mocks em segundos e valide fluxos de API complexos com dados dinâmicos.</p>
+            </div>
+            
+            <div class="api-mock-grid reveal">
+                <div class="api-mock-card">
+                    <div>
+                        <div class="f-icon" style="background: linear-gradient(135deg, #10b981, #06b6d4);"><i data-lucide="send"></i></div>
+                        <h3>API Validation Avançada</h3>
+                        <p class="api-mock-desc">
+                            Valide contratos, schemas JSON e desempenho das suas APIs com automação completa e encadeamento inteligente.
+                        </p>
+                        <ul class="api-mock-list">
+                            <li><i data-lucide="check"></i> Importação instantânea de cURL, OpenAPI/Swagger e Postman</li>
+                            <li><i data-lucide="check"></i> Encadeamento dinâmico de variáveis (Tokens, IDs e Headers)</li>
+                            <li><i data-lucide="check"></i> Execução de lotes (Batches) com acompanhamento em tempo real</li>
+                            <li><i data-lucide="check"></i> Asserções automáticas de Status Code, Headers e SLA de Resposta</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="api-mock-card">
+                    <div>
+                        <div class="f-icon" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);"><i data-lucide="server"></i></div>
+                        <h3>Mock Server Descomplicado</h3>
+                        <p class="api-mock-desc">
+                            Simule qualquer serviço em segundos. Nunca mais fique bloqueado esperando APIs de terceiros ou backends externos.
+                        </p>
+                        <ul class="api-mock-list">
+                            <li><i data-lucide="check"></i> Crie rotas de mock em 1 clique via Swagger, OpenAPI ou cURL</li>
+                            <li><i data-lucide="check"></i> Simule status HTTP customizados (200, 400, 404, 500, etc.)</li>
+                            <li><i data-lucide="check"></i> Controle de latência e delay simulado de rede</li>
+                            <li><i data-lucide="check"></i> Endpoints isolados e seguros para testes de Frontend e E2E</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Performance Showcase -->
-    <section class="performance-showcase" style="background: var(--bg-secondary); padding: 80px 0; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+    <section class="performance-showcase" id="performance" style="background: var(--bg-secondary); padding: 80px 0; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
         <div class="container">
             <div class="section-header reveal">
                 <div class="badge" style="margin-bottom: 15px;">Novo Recurso 🚀</div>
