@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow-QA | A Automação de Testes Definitiva</title>
+    <meta name="description" content="Economize horas de trabalho manual e reduza bugs com fluxos de automação inteligentes.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i data-lucide="activity"></i>
+                <span>Flow-QA</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#features">Recursos</a>
+                <a href="#pricing">Licenças</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#pricing" class="btn btn-primary">Baixar Agora</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="glow-bg"></div>
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <div class="badge">Novo Flow-QA 2.0 ✨</div>
+                <h1 class="hero-title">O fim dos testes frágeis. A nova era do QA <span>impulsionado por IA.</span></h1>
+                <p class="hero-subtitle">Diga adeus aos frameworks complexos e scripts frágeis. Navegue visualmente e deixe nossa IA auto-reparável consertar seletores quebrados em tempo real. Entregue software impecável 10x mais rápido.</p>
+                <div class="hero-cta">
+                    <button onclick="openModal('download-modal')" class="btn btn-primary btn-large">
+                        Baixar (Uso Pessoal)
+                        <i data-lucide="download"></i>
+                    </button>
+                    <button onclick="openModal('purchase-modal')" class="btn btn-secondary btn-large">
+                        <i data-lucide="briefcase"></i> Licença Comercial
+                    </button>
+                </div>
+                <div class="hero-metrics">
+                    <div class="metric"><i data-lucide="check-circle-2"></i> Gratuito para uso pessoal</div>
+                    <div class="metric"><i data-lucide="check-circle-2"></i> Código Aberto na Base</div>
+                </div>
+            </div>
+            
+            <div class="hero-image-wrapper reveal">
+                <!-- Product GIF -->
+                <div class="glass-panel mockup gif-container">
+                    <img src="EditCard.gif" alt="Flow-QA EditCard feature" class="hero-gif">
+                </div>
+                
+                <!-- Floating elements -->
+                <div class="float-card fc-1">
+                    <i data-lucide="zap" class="icon-zap"></i>
+                    <div>
+                        <h4>Execução 10x mais rápida</h4>
+                        <p>No backend Node.js</p>
+                    </div>
+                </div>
+                <div class="float-card fc-2">
+                    <i data-lucide="shield-check" class="icon-shield"></i>
+                    <div>
+                        <h4>Self-Healing Ativo</h4>
+                        <p>IA encontrou novo seletor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Solution -->
+    <section class="problem-solution" id="solution">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>O fim dos testes frágeis e das manutenções intermináveis</h2>
+                <p>Nós construímos a plataforma que transforma o antigo gargalo de QA no maior acelerador de entregas da sua equipe.</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card reveal">
+                    <div class="b-icon red"><i data-lucide="clock"></i></div>
+                    <h3>O Problema</h3>
+                    <p>Sua equipe perde dias configurando frameworks complexos e lidando com <em>flaky tests</em> que quebram a cada pequena mudança visual. O alto custo de manutenção gera gargalos no CI/CD e atrasa lançamentos. O resultado? Baixa cobertura de testes, regressões constantes e bugs críticos afetando seus clientes finais.</p>
+                </div>
+                <div class="benefit-card reveal">
+                    <div class="b-icon green"><i data-lucide="rocket"></i></div>
+                    <h3>A Solução Flow-QA</h3>
+                    <p>Navegue naturalmente pelo seu sistema e veja a mágica acontecer: testes Web, validações de API e análises de performance são gerados simultaneamente. Através de cards visuais e interconectados, nós quebramos a barreira do código. Um novo conceito que acaba de vez com a complexidade na criação e manutenção da sua automação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Tudo o que você precisa em uma única plataforma</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="mouse-pointer-click"></i></div>
+                    <h4>Interface Visual Intuitiva</h4>
+                    <p>Grave interações para Web, iOS e Android em uma interface de arrastar e soltar focada no usuário.</p>
+                </div>
+                
+                <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="sparkles"></i></div>
+                    <h4>Self-Healing com IA</h4>
+                    <p>Mudou um ID ou Classe no código? Nossa IA detecta o elemento pela hierarquia e corrige o teste em tempo real no pipeline CI/CD.</p>
+                </div>
+                
+                <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="layout-template"></i></div>
+                    <h4>Validação Visual (Regression)</h4>
+                    <p>Não dependa apenas de textos. O Flow-QA tira screenshots de botões e falha o teste se a cor ou layout quebrarem.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="smartphone"></i></div>
+                    <h4>Seletores Cross-Platform</h4>
+                    <p>Crie apenas um fluxo E2E e rode-o tanto no Android quanto no iOS utilizando mapeamento unificado de seletores.</p>
+                </div>
+                
+                <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="cloud"></i></div>
+                    <h4>Device Farms (Nuvem)</h4>
+                    <p>Integração nativa de 1-clique com BrowserStack e Sauce Labs para rodar testes em milhares de dispositivos reais.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="bar-chart-3"></i></div>
+                    <h4>Relatórios Visuais</h4>
+                    <p>Receba dashboards ricos e relatórios completos com evidências (prints e vídeos) das falhas na execução.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Showcase -->
+    <section class="performance-showcase" style="background: var(--bg-secondary); padding: 80px 0; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="badge" style="margin-bottom: 15px;">Novo Recurso 🚀</div>
+                <h2>Testes de Performance com Diagnóstico via IA</h2>
+                <p>O Flow-QA não apenas gera carga e estressa sua aplicação, mas nossa Inteligência Artificial compara o histórico de execuções, aponta gargalos e sugere melhorias automáticas na sua infraestrutura.</p>
+            </div>
+            <div class="showcase-image reveal" style="margin-top: 40px; text-align: center; perspective: 1000px;">
+                <video src="Performance.mp4" controls autoplay muted loop style="max-width: 100%; border-radius: 16px; box-shadow: 0 30px 60px rgba(0,0,0,0.5); border: 1px solid var(--border-light);">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Licenciamento Simples e Transparente</h2>
+                <p>O Flow-QA é gratuito para indivíduos. Equipes comerciais precisam de uma licença.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Personal -->
+                <div class="price-card reveal">
+                    <h3>Uso Pessoal</h3>
+                    <p class="target">Para desenvolvedores e uso não-comercial.</p>
+                    <div class="price"><span>R$</span>0</div>
+                    <ul class="features-list">
+                        <li><i data-lucide="check"></i> 1 Usuário Local</li>
+                        <li><i data-lucide="check"></i> Limite de 1 Projeto</li>
+                        <li><i data-lucide="check"></i> Execução Local</li>
+                        <li class="disabled"><i data-lucide="x"></i> Sem CI/CD</li>
+                    </ul>
+                    <button onclick="openModal('download-modal')" class="btn btn-outline btn-full">Fazer Download</button>
+                </div>
+                
+                <!-- Commercial (Até 5) -->
+                <div class="price-card highlight reveal">
+                    <div class="popular-badge">Mais Popular</div>
+                    <h3>Equipes (Até 5)</h3>
+                    <p class="target">Para times ágeis e startups crescendo rápido.</p>
+                    <div class="price"><span>R$</span>999<span>/mês</span></div>
+                    <ul class="features-list">
+                        <li><i data-lucide="check"></i> Até 5 Usuários</li>
+                        <li><i data-lucide="check"></i> Integração CI/CD Ilimitada</li>
+                        <li><i data-lucide="check"></i> Self-Healing com IA</li>
+                        <li><i data-lucide="check"></i> Projetos Ilimitados</li>
+                    </ul>
+                    <button onclick="openModal('purchase-modal')" class="btn btn-primary btn-full">Comprar Licença</button>
+                </div>
+
+                <!-- Commercial (Acima de 5) -->
+                <div class="price-card reveal">
+                    <h3>Corporativo (+5)</h3>
+                    <p class="target">Para corporações com requisitos complexos de QA.</p>
+                    <div class="price" style="font-size: 2.2rem; margin-top: 10px; margin-bottom: 23px;">Custom</div>
+                    <ul class="features-list">
+                        <li><i data-lucide="check"></i> Usuários Ilimitados</li>
+                        <li><i data-lucide="check"></i> SSO & Controle de Acesso</li>
+                        <li><i data-lucide="check"></i> Suporte Prioritário SLA</li>
+                        <li><i data-lucide="check"></i> Gerente de Sucesso (CSM)</li>
+                    </ul>
+                    <button onclick="openModal('purchase-modal')" class="btn btn-outline btn-full">Falar com Vendas</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-final reveal">
+        <div class="container">
+            <h2>Pronto para automatizar com qualidade?</h2>
+            <p>Faça o download agora mesmo ou adquira a licença comercial para a sua empresa.</p>
+            <a href="#pricing" class="btn btn-primary btn-large">Ver Opções de Download</a>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- Download Modal -->
+    <div id="download-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('download-modal')"><i data-lucide="x"></i></button>
+            <h3>Baixar Flow-QA (Uso Pessoal)</h3>
+            <p>Preencha os dados abaixo para receber o link de download no seu email.</p>
+            <form class="modal-form" onsubmit="handleDownloadSubmit(event)">
+                <div class="form-group">
+                    <label>Nome Completo</label>
+                    <input type="text" required placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" required placeholder="seu@email.com">
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Receber Link de Download</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Purchase Modal -->
+    <div id="purchase-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('purchase-modal')"><i data-lucide="x"></i></button>
+            <h3>Comprar Licença Comercial</h3>
+            <p>Preencha as informações da sua empresa para prosseguirmos com o licenciamento.</p>
+            <form class="modal-form" onsubmit="handlePurchaseSubmit(event)">
+                <div class="form-group">
+                    <label>Nome da Empresa</label>
+                    <input type="text" required placeholder="Sua Empresa">
+                </div>
+                <div class="form-group">
+                    <label>CNPJ</label>
+                    <input type="text" id="cnpj-input" required placeholder="00.000.000/0000-00">
+                </div>
+                <div class="form-group">
+                    <label>E-mail Corporativo</label>
+                    <input type="email" id="email-input" required placeholder="voce@empresa.com">
+                </div>
+                <div class="form-group">
+                    <label>Telefone para Contato</label>
+                    <input type="tel" id="phone-input" required placeholder="(11) 99999-9999">
+                </div>
+                <div class="form-group">
+                    <label>Tamanho do Time</label>
+                    <select required>
+                        <option value="">Selecione...</option>
+                        <option value="1-5">1 a 5 pessoas</option>
+                        <option value="6-20">6 a 20 pessoas</option>
+                        <option value="21+">Mais de 20 pessoas</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Solicitar Faturamento</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i data-lucide="activity"></i>
+                    <span>Flow-QA</span>
+                </div>
+                <p>Construído por QAs, para QAs. A automação que você sempre quis ter.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-col">
+                    <h4>Produto</h4>
+                    <a href="#">Features</a>
+                    <a href="#">Preços</a>
+                    <a href="#">Changelog</a>
+                </div>
+                <div class="link-col">
+                    <h4>Recursos</h4>
+                    <a href="#">Documentação</a>
+                    <a href="#">Tutoriais</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="link-col">
+                    <h4>Legal</h4>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Privacidade</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Flow-QA. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
