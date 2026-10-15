@@ -27,6 +27,7 @@
                 <span>Flow-QA</span>
             </div>
             <nav class="nav-links">
+                <a href="#infra">Sua Infra</a>
                 <a href="#features">Recursos</a>
                 <a href="#api-mock">API & Mocks</a>
                 <a href="#performance">Performance</a>
@@ -48,17 +49,18 @@
                 <h1 class="hero-title">O fim dos testes frágeis. A nova era do QA <span>impulsionado por IA.</span></h1>
                 <p class="hero-subtitle">Diga adeus aos frameworks complexos e scripts frágeis. Navegue visualmente e deixe nossa IA auto-reparável consertar seletores quebrados em tempo real. Entregue software impecável 10x mais rápido.</p>
                 <div class="hero-cta">
-                    <button onclick="openModal('download-modal')" class="btn btn-primary btn-large">
+                    <a href="flow-qa-install.zip" download="flow-qa-install.zip" class="btn btn-primary btn-large">
                         Baixar (Uso Pessoal)
                         <i data-lucide="download"></i>
-                    </button>
+                    </a>
                     <button onclick="openModal('purchase-modal')" class="btn btn-secondary btn-large">
                         <i data-lucide="briefcase"></i> Licença Comercial
                     </button>
                 </div>
                 <div class="hero-metrics">
                     <div class="metric"><i data-lucide="check-circle-2"></i> Gratuito para uso pessoal</div>
-                    <div class="metric"><i data-lucide="check-circle-2"></i> Código Aberto na Base</div>
+                    <div class="metric"><i data-lucide="shield-check"></i> 100% On-Premise na sua infra</div>
+                    <div class="metric"><i data-lucide="cpu"></i> Deploy rápido via Docker</div>
                 </div>
             </div>
             
@@ -105,6 +107,61 @@
                     <div class="b-icon green"><i data-lucide="rocket"></i></div>
                     <h3>A Solução Flow-QA</h3>
                     <p>Navegue naturalmente pelo seu sistema e veja a mágica acontecer: testes Web, validações de API e análises de performance são gerados simultaneamente. Através de cards visuais e interconectados, nós quebramos a barreira do código. Um novo conceito que acaba de vez com a complexidade na criação e manutenção da sua automação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure & Self-Hosted Benefits -->
+    <section class="infra-section" id="infra">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="badge" style="margin-bottom: 15px;">Infraestrutura Própria 🛡️</div>
+                <h2>Implante no seu próprio ambiente. Total controle e segurança.</h2>
+                <p>Com o Flow-QA, você não depende de servidores externos ou nuvens de terceiros. A plataforma roda 100% On-Premise na infraestrutura da sua empresa via Docker.</p>
+            </div>
+
+            <div class="infra-grid">
+                <div class="infra-card reveal">
+                    <div class="infra-icon shield">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3>Privacidade & Compliance Total</h3>
+                    <p>Seus dados, tokens de autenticação, segredos de API e relatórios de testes <strong>nunca saem da sua rede interna</strong>. Total conformidade com LGPD, GDPR e políticas internas de segurança corporativa.</p>
+                </div>
+
+                <div class="infra-card reveal">
+                    <div class="infra-icon network">
+                        <i data-lucide="network"></i>
+                    </div>
+                    <h3>Acesso a Ambientes Internos & VPN</h3>
+                    <p>Teste microsserviços em <code>localhost</code>, redes de desenvolvimento, staging e ambientes restritos por firewall ou VPN sem precisar abrir portas para a internet ou configurar túneis externos frágeis.</p>
+                </div>
+
+                <div class="infra-card reveal">
+                    <div class="infra-icon zap">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3>Zero Latência & Alto Desempenho</h3>
+                    <p>Execução ultra-rápida no seu próprio hardware ou cluster de servidores. Sem filas de espera compartilhadas e sem atrasos causados pelo tráfego na internet pública.</p>
+                </div>
+
+                <div class="infra-card reveal">
+                    <div class="infra-icon coins">
+                        <i data-lucide="coins"></i>
+                    </div>
+                    <h3>Sem Custos Ocultos por Execução</h3>
+                    <p>Rode 10 ou 100.000 testes por dia. Você não paga nada a mais por tempo de execução ou volume de testes. A infraestrutura é sua, sem limites de consumo.</p>
+                </div>
+            </div>
+
+            <div class="infra-deploy-box reveal">
+                <div class="infra-deploy-info">
+                    <h4><i data-lucide="terminal" style="color: #38bdf8;"></i> Deploy Instantâneo com Docker</h4>
+                    <p>Suba o Flow-QA completo na sua infraestrutura local ou servidor corporativo com apenas um comando:</p>
+                </div>
+                <div class="infra-command">
+                    <span class="prompt">$</span> docker compose -f docker-compose.prod.yml up -d
                 </div>
             </div>
         </div>
@@ -252,7 +309,10 @@
                         <li><i data-lucide="check"></i> Execução Local</li>
                         <li class="disabled"><i data-lucide="x"></i> Sem CI/CD</li>
                     </ul>
-                    <button onclick="openModal('download-modal')" class="btn btn-outline btn-full">Fazer Download</button>
+                    <a href="flow-qa-install.zip" download="flow-qa-install.zip" class="btn btn-outline btn-full" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                        <i data-lucide="download" style="width: 16px; height: 16px;"></i>
+                        Fazer Download
+                    </a>
                 </div>
                 
                 <!-- Commercial (Até 5) -->
@@ -335,32 +395,12 @@
     </section>
 
     <!-- Modals -->
-    <!-- Download Modal -->
-    <div id="download-modal" class="modal-overlay">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('download-modal')"><i data-lucide="x"></i></button>
-            <h3>Baixar Flow-QA (Uso Pessoal)</h3>
-            <p>Preencha os dados abaixo para receber o link de download no seu email.</p>
-            <form class="modal-form" onsubmit="handleDownloadSubmit(event)">
-                <div class="form-group">
-                    <label>Nome Completo</label>
-                    <input type="text" required placeholder="Seu nome">
-                </div>
-                <div class="form-group">
-                    <label>E-mail</label>
-                    <input type="email" required placeholder="seu@email.com">
-                </div>
-                <button type="submit" class="btn btn-primary btn-full">Receber Link de Download</button>
-            </form>
-        </div>
-    </div>
-
     <!-- Purchase Modal -->
     <div id="purchase-modal" class="modal-overlay">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('purchase-modal')"><i data-lucide="x"></i></button>
             <h3>Adquirir Licença Comercial</h3>
-            <p>Fale diretamente com nossa equipe ou envie seus dados para direcionamento por e-mail:</p>
+            <p>Fale diretamente com nossa equipe técnica ou digite sua mensagem abaixo para direcionamento por e-mail:</p>
 
             <!-- Canais Rápidos de Contato -->
             <div class="modal-channels">
@@ -372,7 +412,7 @@
                     </div>
                 </a>
 
-                <a href="mailto:qualityflowtest@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Licen%C3%A7a%20Comercial%20-%20Flow-QA&body=Ol%C3%A1%20equipe%20Flow-QA%2C%0A%0AGostaria%20de%20solicitar%20uma%20licen%C3%A7a%20comercial%20para%20minha%20empresa.%0A%0AEmpresa%3A%20%0ATelefone%3A%20%0ATamanho%20da%20equipe%3A%20%0A%0AAguardo%20retorno!" class="modal-channel-btn email">
+                <a href="mailto:qualityflowtest@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Licen%C3%A7a%20Comercial%20-%20Flow-QA" class="modal-channel-btn email">
                     <i data-lucide="mail"></i>
                     <div class="modal-channel-text">
                         <strong>Enviar por E-mail</strong>
@@ -382,34 +422,13 @@
             </div>
 
             <div class="modal-divider">
-                <span>ou preencha para gerar o e-mail pré-formatado</span>
+                <span>ou digite sua mensagem abaixo</span>
             </div>
 
             <form class="modal-form" onsubmit="handlePurchaseSubmit(event)">
                 <div class="form-group">
-                    <label>Nome da Empresa</label>
-                    <input type="text" id="company-input" required placeholder="Sua Empresa">
-                </div>
-                <div class="form-group">
-                    <label>CNPJ (opcional)</label>
-                    <input type="text" id="cnpj-input" placeholder="00.000.000/0000-00">
-                </div>
-                <div class="form-group">
-                    <label>Seu E-mail Corporativo</label>
-                    <input type="email" id="email-input" required placeholder="voce@empresa.com">
-                </div>
-                <div class="form-group">
-                    <label>Telefone para Contato</label>
-                    <input type="tel" id="phone-input" required placeholder="(11) 99999-9999">
-                </div>
-                <div class="form-group">
-                    <label>Tamanho do Time</label>
-                    <select id="team-size-select" required>
-                        <option value="">Selecione...</option>
-                        <option value="1-5">1 a 5 pessoas</option>
-                        <option value="6-20">6 a 20 pessoas</option>
-                        <option value="21+">Mais de 20 pessoas</option>
-                    </select>
+                    <label>Digite sua mensagem, dúvidas ou necessidades da equipe:</label>
+                    <textarea id="purchase-message" required placeholder="Olá! Gostaria de saber mais sobre a licença comercial do Flow-QA para a minha empresa. Somos X pessoas na equipe e gostaríamos de informações sobre faturamento e suporte..."></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-full">
                     <i data-lucide="send" style="width: 16px; height: 16px; margin-right: 6px;"></i>
@@ -432,6 +451,7 @@
             <div class="footer-links">
                 <div class="link-col">
                     <h4>Produto</h4>
+                    <a href="#infra">Sua Infra</a>
                     <a href="#features">Features</a>
                     <a href="#pricing">Preços</a>
                     <a href="#api-mock">API & Mocks</a>

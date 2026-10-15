@@ -499,6 +499,115 @@ h2 {
     font-size: 1.1rem;
 }
 
+/* Infra Section */
+.infra-section {
+    padding: 100px 0;
+    background: linear-gradient(180deg, rgba(139, 92, 246, 0.04) 0%, rgba(9, 9, 11, 0) 100%);
+    border-top: 1px solid var(--border-light);
+}
+
+.infra-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.infra-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    padding: 32px 28px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.infra-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(139, 92, 246, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.infra-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.infra-icon.shield { background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); }
+.infra-icon.zap { background: rgba(59, 130, 246, 0.15); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.3); }
+.infra-icon.network { background: rgba(139, 92, 246, 0.15); color: #a855f7; border: 1px solid rgba(139, 92, 246, 0.3); }
+.infra-icon.coins { background: rgba(234, 179, 8, 0.15); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.3); }
+
+.infra-icon i {
+    width: 24px;
+    height: 24px;
+}
+
+.infra-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    color: var(--text-main);
+}
+
+.infra-card p {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+.infra-deploy-box {
+    margin-top: 48px;
+    background: rgba(18, 18, 24, 0.7);
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.infra-deploy-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.infra-deploy-info p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.infra-command {
+    background: #09090b;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 14px 22px;
+    border-radius: 10px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.92rem;
+    color: #38bdf8;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.infra-command span.prompt {
+    color: #10b981;
+    user-select: none;
+    font-weight: 700;
+}
+
 /* Problem & Solution */
 .problem-solution {
     padding: 100px 0;
@@ -1165,15 +1274,21 @@ footer {
     font-weight: 500;
     color: var(--text-muted);
 }
-.form-group input, .form-group select {
+.form-group input, .form-group select, .form-group textarea {
     background: rgba(0,0,0,0.3);
     border: 1px solid var(--border-light);
     border-radius: 8px;
     padding: 12px;
     color: var(--text-main);
     font-family: var(--font-sans);
+    font-size: 0.95rem;
 }
-.form-group input:focus, .form-group select:focus {
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
     outline: none;
     border-color: var(--brand-primary);
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 110px;
+    line-height: 1.5;
 }
