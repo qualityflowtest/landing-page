@@ -359,19 +359,43 @@
     <div id="purchase-modal" class="modal-overlay">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('purchase-modal')"><i data-lucide="x"></i></button>
-            <h3>Comprar Licença Comercial</h3>
-            <p>Preencha as informações da sua empresa para prosseguirmos com o licenciamento.</p>
+            <h3>Adquirir Licença Comercial</h3>
+            <p>Fale diretamente com nossa equipe ou envie seus dados para direcionamento por e-mail:</p>
+
+            <!-- Canais Rápidos de Contato -->
+            <div class="modal-channels">
+                <a href="https://wa.me/5519989624096?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20licen%C3%A7a%20comercial%20do%20Flow-QA." target="_blank" rel="noopener noreferrer" class="modal-channel-btn whatsapp">
+                    <i data-lucide="message-circle"></i>
+                    <div class="modal-channel-text">
+                        <strong>WhatsApp Direto</strong>
+                        <span>(19) 98962-4096</span>
+                    </div>
+                </a>
+
+                <a href="mailto:qualityflowtest@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Licen%C3%A7a%20Comercial%20-%20Flow-QA&body=Ol%C3%A1%20equipe%20Flow-QA%2C%0A%0AGostaria%20de%20solicitar%20uma%20licen%C3%A7a%20comercial%20para%20minha%20empresa.%0A%0AEmpresa%3A%20%0ATelefone%3A%20%0ATamanho%20da%20equipe%3A%20%0A%0AAguardo%20retorno!" class="modal-channel-btn email">
+                    <i data-lucide="mail"></i>
+                    <div class="modal-channel-text">
+                        <strong>Enviar por E-mail</strong>
+                        <span>qualityflowtest@gmail.com</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="modal-divider">
+                <span>ou preencha para gerar o e-mail pré-formatado</span>
+            </div>
+
             <form class="modal-form" onsubmit="handlePurchaseSubmit(event)">
                 <div class="form-group">
                     <label>Nome da Empresa</label>
-                    <input type="text" required placeholder="Sua Empresa">
+                    <input type="text" id="company-input" required placeholder="Sua Empresa">
                 </div>
                 <div class="form-group">
-                    <label>CNPJ</label>
-                    <input type="text" id="cnpj-input" required placeholder="00.000.000/0000-00">
+                    <label>CNPJ (opcional)</label>
+                    <input type="text" id="cnpj-input" placeholder="00.000.000/0000-00">
                 </div>
                 <div class="form-group">
-                    <label>E-mail Corporativo</label>
+                    <label>Seu E-mail Corporativo</label>
                     <input type="email" id="email-input" required placeholder="voce@empresa.com">
                 </div>
                 <div class="form-group">
@@ -380,27 +404,18 @@
                 </div>
                 <div class="form-group">
                     <label>Tamanho do Time</label>
-                    <select required>
+                    <select id="team-size-select" required>
                         <option value="">Selecione...</option>
                         <option value="1-5">1 a 5 pessoas</option>
                         <option value="6-20">6 a 20 pessoas</option>
                         <option value="21+">Mais de 20 pessoas</option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary btn-full">Solicitar Faturamento</button>
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i data-lucide="send" style="width: 16px; height: 16px; margin-right: 6px;"></i>
+                    Direcionar para Envio por E-mail
+                </button>
             </form>
-
-            <div class="modal-contact-hint">
-                <span>Prefere atendimento imediato?</span>
-                <div class="modal-contact-links">
-                    <a href="https://wa.me/5519989624096" target="_blank" rel="noopener noreferrer" class="link-wa">
-                        <i data-lucide="message-circle"></i> (19) 98962-4096
-                    </a>
-                    <a href="mailto:qualityflowtest@gmail.com" class="link-mail">
-                        <i data-lucide="mail"></i> qualityflowtest@gmail.com
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
 

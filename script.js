@@ -44,7 +44,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Modal Logic
 window.openModal = function(id) { 
-    document.getElementById(id).classList.add('active'); 
+    const el = document.getElementById(id);
+    if (el) {
+        el.classList.add('active'); 
+        if (window.lucide && typeof window.lucide.createIcons === 'function') {
+            window.lucide.createIcons();
+        }
+    }
 }
 window.closeModal = function(id) { 
     document.getElementById(id).classList.remove('active'); 
@@ -126,26 +132,37 @@ function isValidEmail(email) {
 
 function handlePurchaseSubmit(e) {
     e.preventDefault();
-    const emailInput = document.getElementById('email-input');
-    
-    if (!isValidEmail(emailInput.value)) {
-        alert("Por favor, insira um e-mail válido.");
-        emailInput.focus();
+    const company = document.getElementById('company-input')?.value.trim() || 'Empresa';
+    const cnpj = document.getElementById('cnpj-input')?.value.trim() || 'Não informado';
+    const email = document.getElementById('email-input')?.value.trim() || '';
+    const phone = document.getElementById('phone-input')?.value.trim() || 'Não informado';
+    const teamSelect = document.getElementById('team-size-select');
+    const teamSize = teamSelect && teamSelect.selectedIndex >= 0 ? teamSelect.options[teamSelect.selectedIndex].text : 'Não informado';
+
+    if (!email || !isValidEmail(email)) {
+        alert("Por favor, insira um e-mail corporativo válido.");
+        document.getElementById('email-input')?.focus();
         return;
     }
 
-    const form = e.target;
-    const btn = form.querySelector('button[type="submit"]');
-    const originalText = btn.innerText;
-    
-    btn.innerText = "Processando...";
-    btn.disabled = true;
+    const subject = encodeURIComponent(`Solicitação de Licença Comercial - ${company}`);
+    const body = encodeURIComponent(
+        `Olá equipe Flow-QA,\n\n` +
+        `Gostaria de solicitar informações de contratação e faturamento da licença comercial do Flow-QA.\n\n` +
+        `📋 Dados da Empresa:\n` +
+        `• Empresa: ${company}\n` +
+        `• CNPJ: ${cnpj}\n` +
+        `• E-mail para contato: ${email}\n` +
+        `• Telefone para contato: ${phone}\n` +
+        `• Tamanho da equipe: ${teamSize}\n\n` +
+        `Aguardo retorno com as orientações de ativação.\n\n` +
+        `Atenciosamente,`
+    );
+
+    // Direciona imediatamente para o cliente de e-mail padrão
+    window.location.href = `mailto:qualityflowtest@gmail.com?subject=${subject}&body=${body}`;
 
     setTimeout(() => {
-        alert("Solicitação enviada com sucesso! Nossa equipe entrará em contato.");
         closeModal('purchase-modal');
-        btn.innerText = originalText;
-        btn.disabled = false;
-        form.reset();
-    }, 800);
+    }, 600);
 }
