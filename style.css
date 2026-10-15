@@ -799,6 +799,174 @@ h2 {
     font-size: 1.1rem;
 }
 
+/* Contact Section */
+.contact-section {
+    padding: 100px 0;
+    background: rgba(255, 255, 255, 0.015);
+    border-top: 1px solid var(--border-light);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    padding: 32px 28px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.contact-card.whatsapp:hover {
+    border-color: rgba(37, 211, 102, 0.5);
+    box-shadow: 0 20px 40px rgba(37, 211, 102, 0.15);
+}
+
+.contact-card.email:hover {
+    border-color: rgba(139, 92, 246, 0.5);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
+}
+
+.contact-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon-wrapper.whatsapp {
+    background: rgba(37, 211, 102, 0.15);
+    color: #25d366;
+    border: 1px solid rgba(37, 211, 102, 0.3);
+}
+
+.contact-icon-wrapper.email {
+    background: rgba(139, 92, 246, 0.15);
+    color: #a855f7;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.contact-icon-wrapper i {
+    width: 28px;
+    height: 28px;
+}
+
+.contact-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: var(--text-main);
+}
+
+.contact-value {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.contact-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+.contact-card:hover .contact-action {
+    color: var(--brand-primary);
+}
+
+.contact-card.whatsapp:hover .contact-action {
+    color: #25d366;
+}
+
+.contact-action i {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.2s ease;
+}
+
+.contact-card:hover .contact-action i {
+    transform: translateX(4px);
+}
+
+/* Modal Contact Hint */
+.modal-contact-hint {
+    margin-top: 24px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.modal-contact-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.modal-contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-light);
+    transition: all 0.2s ease;
+}
+
+.modal-contact-links a.link-wa {
+    color: #25d366;
+}
+
+.modal-contact-links a.link-wa:hover {
+    background: rgba(37, 211, 102, 0.15);
+    border-color: rgba(37, 211, 102, 0.4);
+}
+
+.modal-contact-links a.link-mail {
+    color: #a855f7;
+}
+
+.modal-contact-links a.link-mail:hover {
+    background: rgba(139, 92, 246, 0.15);
+    border-color: rgba(139, 92, 246, 0.4);
+}
+
+.modal-contact-links a i {
+    width: 14px;
+    height: 14px;
+}
+
 /* Footer */
 footer {
     border-top: 1px solid var(--border-light);
@@ -818,7 +986,7 @@ footer {
 }
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 .link-col h4 {
@@ -855,6 +1023,7 @@ footer {
     .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
     .price-card.highlight { transform: scale(1); }
     .footer-container { grid-template-columns: 1fr; gap: 40px; }
+    .footer-links { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
@@ -863,6 +1032,8 @@ footer {
     .hero-cta { flex-direction: column; }
     .benefits-grid, .testimonial-grid { grid-template-columns: 1fr; }
     .features-grid { grid-template-columns: 1fr; }
+    .footer-links { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
 }
 
 /* Scroll Reveal */
