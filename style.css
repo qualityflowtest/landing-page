@@ -608,6 +608,31 @@ h2 {
     font-weight: 700;
 }
 
+.infra-deploy-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.infra-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 22px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+    transition: all 0.25s ease;
+}
+
+.infra-download-btn:hover {
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+    transform: translateY(-2px);
+}
+
 /* Problem & Solution */
 .problem-solution {
     padding: 100px 0;
@@ -1189,6 +1214,9 @@ footer {
     .footer-links { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
     .modal-channels { grid-template-columns: 1fr; }
+    .infra-deploy-actions { flex-direction: column; width: 100%; align-items: stretch; }
+    .infra-command { width: 100%; justify-content: center; text-align: center; }
+    .infra-download-btn { width: 100%; justify-content: center; }
 }
 
 /* Scroll Reveal */
