@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flow-QA | A Automação de Testes Definitiva</title>
-    <meta name="description" content="Economize horas de trabalho manual e reduza bugs com fluxos de automação inteligentes.">
+    <meta name="description" content="Transforme testes manuais em automação com auto-correção via IA, validação de API, Mock Server e testes de performance 100% na sua infraestrutura.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,19 +19,19 @@
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- 1. Header / Navbar -->
     <header class="navbar">
         <div class="container nav-container">
-            <div class="logo">
+            <a href="#" class="logo" style="text-decoration: none;">
                 <i data-lucide="activity"></i>
                 <span>Flow-QA</span>
-            </div>
+            </a>
             <nav class="nav-links">
-                <a href="#infra">Sua Infra</a>
-                <a href="#features">Recursos</a>
                 <a href="#web-automation">Automação Web</a>
                 <a href="#api-mock">API & Mocks</a>
                 <a href="#performance">Performance</a>
+                <a href="#features">Recursos</a>
+                <a href="#infra">Sua Infra</a>
                 <a href="#pricing">Licenças</a>
                 <a href="#contact">Contato</a>
             </nav>
@@ -41,14 +41,14 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- 2. Hero Section -->
     <section class="hero">
         <div class="glow-bg"></div>
         <div class="container hero-container">
             <div class="hero-content reveal">
                 <div class="badge">Novo Flow-QA 2.0 ✨</div>
                 <h1 class="hero-title">O fim dos testes frágeis. A nova era do QA <span>impulsionado por IA.</span></h1>
-                <p class="hero-subtitle">Diga adeus aos frameworks complexos e scripts frágeis. Navegue visualmente e deixe nossa IA auto-reparável consertar seletores quebrados em tempo real. Entregue software impecável 10x mais rápido.</p>
+                <p class="hero-subtitle">Diga adeus aos frameworks complexos e scripts frágeis. Grave sua execução manual no navegador, gere automações completas sem código e deixe nossa IA consertar seletores quebrados em tempo real.</p>
                 <div class="hero-cta">
                     <a href="flow-qa-install.zip?v=2.2" download="flow-qa-install.zip" class="btn btn-primary btn-large">
                         Baixar (Uso Pessoal)
@@ -66,178 +66,57 @@
             </div>
             
             <div class="hero-image-wrapper reveal">
-                <!-- Product GIF -->
                 <div class="glass-panel mockup gif-container">
                     <img src="EditCard.gif" alt="Flow-QA EditCard feature" class="hero-gif">
                 </div>
                 
-                <!-- Floating elements -->
                 <div class="float-card fc-1">
                     <i data-lucide="zap" class="icon-zap"></i>
                     <div>
-                        <h4>Execução 10x mais rápida</h4>
-                        <p>No backend Node.js</p>
+                        <h4>Do Manual ao Automatizado</h4>
+                        <p>Gravado direto pela extensão</p>
                     </div>
                 </div>
                 <div class="float-card fc-2">
                     <i data-lucide="shield-check" class="icon-shield"></i>
                     <div>
                         <h4>Self-Healing Ativo</h4>
-                        <p>IA encontrou novo seletor</p>
+                        <p>IA corrigiu seletor quebrado</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Problem & Solution -->
+    <!-- 3. Problem & Solution (Por que o Flow-QA?) -->
     <section class="problem-solution" id="solution">
         <div class="container">
             <div class="section-header reveal">
+                <div class="badge">Por que mudar para o Flow-QA? 💡</div>
                 <h2>O fim dos testes frágeis e das manutenções intermináveis</h2>
-                <p>Nós construímos a plataforma que transforma o antigo gargalo de QA no maior acelerador de entregas da sua equipe.</p>
+                <p>Construímos a plataforma que transforma o antigo gargalo de QA no maior acelerador de entregas da sua equipe.</p>
             </div>
             
             <div class="benefits-grid">
                 <div class="benefit-card reveal">
                     <div class="b-icon red"><i data-lucide="clock"></i></div>
-                    <h3>O Problema</h3>
+                    <h3>O Problema Tradicional</h3>
                     <p>Sua equipe perde dias configurando frameworks complexos e lidando com <em>flaky tests</em> que quebram a cada pequena mudança visual. O alto custo de manutenção gera gargalos no CI/CD e atrasa lançamentos. O resultado? Baixa cobertura de testes, regressões constantes e bugs críticos afetando seus clientes finais.</p>
                 </div>
                 <div class="benefit-card reveal">
                     <div class="b-icon green"><i data-lucide="rocket"></i></div>
                     <h3>A Solução Flow-QA</h3>
-                    <p>Navegue naturalmente pelo seu sistema e veja a mágica acontecer: testes Web, validações de API e análises de performance são gerados simultaneamente. Através de cards visuais e interconectados, nós quebramos a barreira do código. Um novo conceito que acaba de vez com a complexidade na criação e manutenção da sua automação.</p>
+                    <p>Navegue naturalmente pelo seu sistema e veja a mágica acontecer: testes Web, validações de API, mocks e análises de performance reunidos em um único lugar. Através de cards visuais e auto-correção por IA, eliminamos de vez a complexidade na criação e manutenção da sua automação.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Infrastructure & Self-Hosted Benefits -->
-    <section class="infra-section" id="infra">
-        <div class="container">
-            <div class="section-header reveal">
-                <div class="badge" style="margin-bottom: 15px;">Infraestrutura Própria 🛡️</div>
-                <h2>Implante no seu próprio ambiente. Total controle e segurança.</h2>
-                <p>Com o Flow-QA, você não depende de servidores externos ou nuvens de terceiros. A plataforma roda 100% On-Premise na infraestrutura da sua empresa via Docker.</p>
-            </div>
-
-            <div class="infra-grid">
-                <div class="infra-card reveal">
-                    <div class="infra-icon shield">
-                        <i data-lucide="shield-check"></i>
-                    </div>
-                    <h3>Privacidade & Compliance Total</h3>
-                    <p>Seus dados, tokens de autenticação, segredos de API e relatórios de testes <strong>nunca saem da sua rede interna</strong>. Total conformidade com LGPD, GDPR e políticas internas de segurança corporativa.</p>
-                </div>
-
-                <div class="infra-card reveal">
-                    <div class="infra-icon network">
-                        <i data-lucide="network"></i>
-                    </div>
-                    <h3>Acesso a Ambientes Internos & VPN</h3>
-                    <p>Teste microsserviços em <code>localhost</code>, redes de desenvolvimento, staging e ambientes restritos por firewall ou VPN sem precisar abrir portas para a internet ou configurar túneis externos frágeis.</p>
-                </div>
-
-                <div class="infra-card reveal">
-                    <div class="infra-icon zap">
-                        <i data-lucide="zap"></i>
-                    </div>
-                    <h3>Zero Latência & Alto Desempenho</h3>
-                    <p>Execução ultra-rápida no seu próprio hardware ou cluster de servidores. Sem filas de espera compartilhadas e sem atrasos causados pelo tráfego na internet pública.</p>
-                </div>
-
-                <div class="infra-card reveal">
-                    <div class="infra-icon coins">
-                        <i data-lucide="coins"></i>
-                    </div>
-                    <h3>Sem Custos Ocultos por Execução</h3>
-                    <p>Rode 10 ou 100.000 testes por dia. Você não paga nada a mais por tempo de execução ou volume de testes. A infraestrutura é sua, sem limites de consumo.</p>
-                </div>
-            </div>
-
-            <div class="infra-deploy-box reveal">
-                <div class="infra-deploy-info">
-                    <h4><i data-lucide="terminal" style="color: #38bdf8;"></i> Deploy Instantâneo com Docker</h4>
-                    <p>Baixe os arquivos de instalação e suba o Flow-QA completo na sua infraestrutura com apenas um comando:</p>
-                </div>
-                <div class="infra-deploy-actions">
-                    <div class="infra-command">
-                        <span class="prompt">$</span> docker compose -f docker-compose.flow.yml up -d
-                    </div>
-                    <a href="flow-qa-install.zip?v=2.2" download="flow-qa-install.zip" class="btn btn-primary infra-download-btn">
-                        <i data-lucide="download"></i>
-                        Baixar Arquivos (.zip)
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2>Tudo o que você precisa em uma única plataforma</h2>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-item reveal">
-                    <div class="f-icon"><i data-lucide="mouse-pointer-click"></i></div>
-                    <h4>Interface Visual Intuitiva</h4>
-                    <p>Grave interações para Web, iOS e Android em uma interface de arrastar e soltar focada no usuário.</p>
-                </div>
-                
-                <div class="feature-item reveal">
-                    <div class="f-icon"><i data-lucide="sparkles"></i></div>
-                    <h4>Integre com a IA de sua Preferência</h4>
-                    <p>Você escolhe qual IA deseja utilizar (OpenAI, Claude, Gemini ou modelos locais). Mudou um ID ou classe no código? A IA selecionada detecta o elemento pela hierarquia e corrige o teste em tempo real no pipeline CI/CD.</p>
-                </div>
-                
-                <div class="feature-item reveal">
-                    <div class="f-icon"><i data-lucide="send"></i></div>
-                    <h4>Validação de API & Contratos</h4>
-                    <p>Importe OpenAPI, cURL ou Postman. Valide schemas, status codes e encadeie variáveis dinâmicas em execuções em lote.</p>
-                </div>
-
-                <div class="feature-item reveal">
-                    <div class="f-icon"><i data-lucide="server"></i></div>
-                    <h4>Mock Server Inteligente</h4>
-                    <p>Crie mocks em segundos e teste sem depender de backends em desenvolvimento ou APIs externas instáveis.</p>
-                </div>
-
-                <div class="feature-item reveal">
-                    <div class="f-icon"><i data-lucide="layout-template"></i></div>
-                    <h4>Validação Visual (Regression)</h4>
-                    <p>Não dependa apenas de textos. O Flow-QA tira screenshots de botões e falha o teste se a cor ou layout quebrarem.</p>
-                </div>
-
-                <div class="feature-item reveal">
-                    <div class="f-icon"><i data-lucide="smartphone"></i></div>
-                    <h4>Seletores Cross-Platform</h4>
-                    <p>Crie apenas um fluxo E2E e rode-o tanto no Android quanto no iOS utilizando mapeamento unificado de seletores.</p>
-                </div>
-                
-                <div class="feature-item reveal">
-                    <div class="f-icon"><i data-lucide="cloud"></i></div>
-                    <h4>Device Farms (Nuvem)</h4>
-                    <p>Integração nativa de 1-clique com BrowserStack e Sauce Labs para rodar testes em milhares de dispositivos reais.</p>
-                </div>
-
-                <div class="feature-item reveal">
-                    <div class="f-icon"><i data-lucide="bar-chart-3"></i></div>
-                    <h4>Relatórios Visuais</h4>
-                    <p>Receba dashboards ricos e relatórios completos com evidências (prints e vídeos) das falhas na execução.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Web Automation, Recorder Extension & AI Self-Healing Showcase -->
+    <!-- 4. Pilar 1: Web Automation, Recorder Extension & AI Self-Healing -->
     <section class="web-automation-showcase" id="web-automation">
         <div class="container">
             <div class="section-header reveal">
-                <div class="badge" style="margin-bottom: 15px;">Zero Código & Zero Manutenção ⚡</div>
+                <div class="badge">Pilar 1 • Automação Web & IA ⚡</div>
                 <h2>Da Execução Manual para a Automação com Auto-Correção</h2>
                 <p>Transforme seus testes manuais no navegador em fluxos automatizados em segundos e deixe a Inteligência Artificial consertar seletores quebrados sozinha.</p>
             </div>
@@ -248,7 +127,7 @@
                     <div class="step-badge">1</div>
                     <div class="step-icon"><i data-lucide="disc"></i></div>
                     <h4>Grave sua Execução Manual</h4>
-                    <p>Ative a extensão do Flow-QA no navegador e execute o teste manualmente como um usuário real.</p>
+                    <p>Ative a extensão do Flow-QA no navegador e execute o fluxo manualmente como um usuário real.</p>
                 </div>
                 <div class="journey-arrow"><i data-lucide="arrow-right"></i></div>
                 <div class="journey-step">
@@ -325,11 +204,11 @@
         </div>
     </section>
 
-    <!-- API Validation & Mock Showcase -->
+    <!-- 5. Pilar 2: API Validation & Mock Showcase -->
     <section class="api-mock-showcase" id="api-mock">
         <div class="container">
             <div class="section-header reveal">
-                <div class="badge" style="margin-bottom: 15px;">Nova Geração ✨</div>
+                <div class="badge">Pilar 2 • Back-end & Contratos 🔗</div>
                 <h2>Validação de API & Mock Server Integrado</h2>
                 <p>Chega de depender de APIs externas instáveis ou atrasar testes esperando o backend ficar pronto. Crie mocks em segundos e valide fluxos de API complexos com dados dinâmicos.</p>
             </div>
@@ -370,47 +249,165 @@
         </div>
     </section>
 
-    <!-- Performance Showcase -->
-    <section class="performance-showcase" id="performance" style="background: var(--bg-secondary); padding: 80px 0; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+    <!-- 6. Pilar 3: Performance Showcase -->
+    <section class="performance-showcase" id="performance">
         <div class="container">
             <div class="section-header reveal">
-                <div class="badge" style="margin-bottom: 15px;">Novo Recurso 🚀</div>
+                <div class="badge">Pilar 3 • Carga & Escalabilidade 🚀</div>
                 <h2>Testes de Performance com Diagnóstico via IA</h2>
                 <p>O Flow-QA não apenas gera carga e estressa sua aplicação, mas nossa Inteligência Artificial compara o histórico de execuções, aponta gargalos e sugere melhorias automáticas na sua infraestrutura.</p>
             </div>
-            <div class="showcase-image reveal" style="margin-top: 40px; text-align: center; perspective: 1000px;">
-                <video src="Performance.mp4" controls autoplay muted loop style="max-width: 100%; border-radius: 16px; box-shadow: 0 30px 60px rgba(0,0,0,0.5); border: 1px solid var(--border-light);">
+
+            <div class="perf-highlights reveal">
+                <div class="perf-pill"><i data-lucide="gauge"></i> Simulação de Múltiplos Usuários Simultâneos (VUs)</div>
+                <div class="perf-pill"><i data-lucide="activity"></i> Métricas em Tempo Real (Latência P95/P99, RPS e Erros)</div>
+                <div class="perf-pill"><i data-lucide="brain-circuit"></i> Diagnóstico Inteligente de Gargalos via IA</div>
+            </div>
+
+            <div class="showcase-image reveal">
+                <video src="Performance.mp4" controls autoplay muted loop class="perf-video">
                     Seu navegador não suporta a tag de vídeo.
                 </video>
             </div>
         </div>
     </section>
 
-    <!-- Pricing -->
+    <!-- 7. Ecossistema Completo de Recursos -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="badge">Plataforma Unificada 🧩</div>
+                <h2>Tudo o que sua operação de QA precisa em um só lugar</h2>
+                <p>Recursos avançados desenhados para escalar a qualidade do seu software do ambiente local até o CI/CD corporativo.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="sparkles"></i></div>
+                    <h4>Integre com a IA de sua Preferência</h4>
+                    <p>Conecte OpenAI, Claude, Gemini ou modelos locais (Ollama). Você mantém total liberdade para escolher o motor de IA da sua equipe.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="layout-template"></i></div>
+                    <h4>Validação Visual (Regression)</h4>
+                    <p>Não dependa apenas de textos. O Flow-QA compara screenshots de componentes e detecta quebras visuais de layout ou cor automaticamente.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="smartphone"></i></div>
+                    <h4>Automação Mobile Cross-Platform</h4>
+                    <p>Crie fluxos E2E para Android e iOS utilizando inspeção visual e mapeamento unificado de seletores nativos.</p>
+                </div>
+                
+                <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="cloud"></i></div>
+                    <h4>Device Farms na Nuvem</h4>
+                    <p>Integração nativa com BrowserStack e Sauce Labs para executar suas suítes em centenas de dispositivos físicos reais.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="calendar-clock"></i></div>
+                    <h4>Agendamentos & Execução em Lote</h4>
+                    <p>Programe baterias de regressão noturnas (Cron) ou dispare suítes completas em paralelo diretamente da sua pipeline CI/CD.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="f-icon"><i data-lucide="bar-chart-3"></i></div>
+                    <h4>Relatórios com Vídeo & Trace</h4>
+                    <p>Dashboards executivos e histórico detalhado com gravação em vídeo, screenshots passo a passo e logs de cada execução.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Infraestrutura & Self-Hosted Benefits -->
+    <section class="infra-section" id="infra">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="badge">Infraestrutura Própria 🛡️</div>
+                <h2>Implante no seu próprio ambiente. Total controle e segurança.</h2>
+                <p>Com o Flow-QA, você não depende de servidores externos ou nuvens de terceiros. A plataforma roda 100% On-Premise na infraestrutura da sua empresa via Docker.</p>
+            </div>
+
+            <div class="infra-grid">
+                <div class="infra-card reveal">
+                    <div class="infra-icon shield">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3>Privacidade & Compliance Total</h3>
+                    <p>Seus dados, tokens de autenticação, segredos de API e relatórios de testes <strong>nunca saem da sua rede interna</strong>. Total conformidade com LGPD, GDPR e políticas internas de segurança corporativa.</p>
+                </div>
+
+                <div class="infra-card reveal">
+                    <div class="infra-icon network">
+                        <i data-lucide="network"></i>
+                    </div>
+                    <h3>Acesso a Ambientes Internos & VPN</h3>
+                    <p>Teste microsserviços em <code>localhost</code>, redes de desenvolvimento, staging e ambientes restritos por firewall ou VPN sem precisar abrir portas para a internet ou configurar túneis externos frágeis.</p>
+                </div>
+
+                <div class="infra-card reveal">
+                    <div class="infra-icon zap">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3>Zero Latência & Alto Desempenho</h3>
+                    <p>Execução ultra-rápida no seu próprio hardware ou cluster de servidores. Sem filas de espera compartilhadas e sem atrasos causados pelo tráfego na internet pública.</p>
+                </div>
+
+                <div class="infra-card reveal">
+                    <div class="infra-icon coins">
+                        <i data-lucide="coins"></i>
+                    </div>
+                    <h3>Sem Custos Ocultos por Execução</h3>
+                    <p>Rode 10 ou 100.000 testes por dia. Você não paga nada a mais por tempo de execução ou volume de testes. A infraestrutura é sua, sem limites de consumo.</p>
+                </div>
+            </div>
+
+            <div class="infra-deploy-box reveal">
+                <div class="infra-deploy-info">
+                    <h4><i data-lucide="terminal" style="color: #38bdf8;"></i> Deploy Instantâneo com Docker</h4>
+                    <p>Baixe o pacote de instalação (<code>docker-compose.flow.yml</code>, <code>flow.env</code> e guia passo a passo) e suba tudo com um único comando:</p>
+                </div>
+                <div class="infra-deploy-actions">
+                    <div class="infra-command">
+                        <span class="prompt">$</span> docker compose -f docker-compose.flow.yml up -d
+                    </div>
+                    <a href="flow-qa-install.zip?v=2.2" download="flow-qa-install.zip" class="btn btn-primary infra-download-btn">
+                        <i data-lucide="download"></i>
+                        Baixar Arquivos (.zip)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Pricing / Licenciamento -->
     <section class="pricing" id="pricing">
         <div class="container">
             <div class="section-header reveal">
+                <div class="badge">Planos & Licenças 💎</div>
                 <h2>Licenciamento Simples e Transparente</h2>
-                <p>O Flow-QA é gratuito para indivíduos. Equipes comerciais precisam de uma licença.</p>
+                <p>Comece gratuitamente no seu ambiente local ou escale com toda a sua equipe comercial.</p>
             </div>
             
             <div class="pricing-grid">
                 <!-- Personal -->
                 <div class="price-card reveal">
                     <h3>Uso Pessoal</h3>
-                    <p class="target">Para desenvolvedores e uso não-comercial.</p>
+                    <p class="target">Para desenvolvedores e uso individual não-comercial.</p>
                     <div class="price"><span>$</span>0</div>
                     <ul class="features-list">
                         <li><i data-lucide="check"></i> 1 Usuário Local</li>
                         <li><i data-lucide="check"></i> Até 2 Projetos</li>
                         <li><i data-lucide="check"></i> Até 2 Servidores Mock</li>
                         <li><i data-lucide="check"></i> Até 2 Validações de API</li>
-                        <li><i data-lucide="check"></i> Execução Local</li>
-                        <li class="disabled"><i data-lucide="x"></i> Sem CI/CD</li>
+                        <li><i data-lucide="check"></i> Execução Local via Docker</li>
+                        <li class="disabled"><i data-lucide="x"></i> Sem Integração CI/CD</li>
                     </ul>
                     <a href="flow-qa-install.zip?v=2.2" download="flow-qa-install.zip" class="btn btn-outline btn-full" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
                         <i data-lucide="download" style="width: 16px; height: 16px;"></i>
-                        Fazer Download
+                        Fazer Download Gratuito
                     </a>
                 </div>
                 
@@ -424,8 +421,8 @@
                         <li><i data-lucide="check"></i> Até 5 Usuários</li>
                         <li><i data-lucide="check"></i> Integração CI/CD Ilimitada</li>
                         <li><i data-lucide="check"></i> IA de sua Preferência (OpenAI, Gemini, etc.)</li>
-                        <li><i data-lucide="check"></i> Projetos Ilimitados</li>
-                        <li><i data-lucide="check"></i> Mocks & APIs Ilimitados</li>
+                        <li><i data-lucide="check"></i> Projetos, Mocks & APIs Ilimitados</li>
+                        <li><i data-lucide="check"></i> Auto-Correção (Self-Healing) Ativa</li>
                     </ul>
                     <button onclick="openModal('purchase-modal')" class="btn btn-primary btn-full">Comprar Licença</button>
                 </div>
@@ -433,13 +430,13 @@
                 <!-- Commercial (Acima de 5) -->
                 <div class="price-card reveal">
                     <h3>Corporativo (+5)</h3>
-                    <p class="target">Para corporações com requisitos complexos de QA.</p>
+                    <p class="target">Para corporações com requisitos avançados de QA.</p>
                     <div class="price" style="font-size: 2.2rem; margin-top: 10px; margin-bottom: 23px;">Custom</div>
                     <ul class="features-list">
                         <li><i data-lucide="check"></i> Usuários Ilimitados</li>
-                        <li><i data-lucide="check"></i> SSO & Controle de Acesso</li>
-                        <li><i data-lucide="check"></i> Suporte Prioritário SLA</li>
-                        <li><i data-lucide="check"></i> Gerente de Sucesso (CSM)</li>
+                        <li><i data-lucide="check"></i> Controle de Acesso (RBAC) & Auditoria</li>
+                        <li><i data-lucide="check"></i> Suporte Prioritário com SLA</li>
+                        <li><i data-lucide="check"></i> Apoio Dedicado na Implantação</li>
                     </ul>
                     <button onclick="openModal('purchase-modal')" class="btn btn-outline btn-full">Falar com Vendas</button>
                 </div>
@@ -447,13 +444,13 @@
         </div>
     </section>
 
-    <!-- Contact & Support Section -->
+    <!-- 10. Contact & Support Section -->
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="section-header reveal" style="text-align: center; max-width: 700px; margin: 0 auto 50px;">
-                <div class="badge" style="margin-bottom: 15px;">Fale Conosco 💬</div>
+                <div class="badge">Fale Conosco 💬</div>
                 <h2>Dúvidas, Suporte ou Licenças?</h2>
-                <p>Nossa equipe técnica está pronta para ajudar você a implementar o Flow-QA e acelerar a qualidade do seu software.</p>
+                <p>Nossa equipe técnica está pronta para ajudar você a implantar o Flow-QA na sua infraestrutura e acelerar a qualidade do seu software.</p>
             </div>
 
             <div class="contact-grid reveal">
@@ -484,16 +481,22 @@
         </div>
     </section>
 
-    <!-- Final CTA -->
+    <!-- 11. Final CTA -->
     <section class="cta-final reveal">
         <div class="container">
-            <h2>Pronto para automatizar com qualidade?</h2>
-            <p>Faça o download agora mesmo ou adquira a licença comercial para a sua empresa.</p>
-            <a href="#pricing" class="btn btn-primary btn-large">Ver Opções de Download</a>
+            <h2>Pronto para evoluir sua automação de testes?</h2>
+            <p>Baixe o instalador Docker agora mesmo ou solicite uma licença comercial para a sua equipe.</p>
+            <div class="hero-cta" style="margin-bottom: 0;">
+                <a href="flow-qa-install.zip?v=2.2" download="flow-qa-install.zip" class="btn btn-primary btn-large">
+                    <i data-lucide="download"></i> Baixar Instalador (.zip)
+                </a>
+                <button onclick="openModal('purchase-modal')" class="btn btn-secondary btn-large">
+                    <i data-lucide="briefcase"></i> Solicitar Licença Comercial
+                </button>
+            </div>
         </div>
     </section>
 
-    <!-- Modals -->
     <!-- Purchase Modal -->
     <div id="purchase-modal" class="modal-overlay">
         <div class="modal-content">
@@ -501,7 +504,6 @@
             <h3>Adquirir Licença Comercial</h3>
             <p>Fale diretamente com nossa equipe técnica ou digite sua mensagem abaixo para direcionamento por e-mail:</p>
 
-            <!-- Canais Rápidos de Contato -->
             <div class="modal-channels">
                 <a href="https://wa.me/5519989624096?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20licen%C3%A7a%20comercial%20do%20Flow-QA." target="_blank" rel="noopener noreferrer" class="modal-channel-btn whatsapp">
                     <i data-lucide="message-circle"></i>
@@ -537,7 +539,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- 12. Footer -->
     <footer>
         <div class="container footer-container">
             <div class="footer-brand">
@@ -545,30 +547,24 @@
                     <i data-lucide="activity"></i>
                     <span>Flow-QA</span>
                 </div>
-                <p>Construído por QAs, para QAs. A automação que você sempre quis ter.</p>
+                <p>Construído por QAs, para QAs. A plataforma completa de automação Web, API, Mocks e Performance 100% On-Premise.</p>
             </div>
             <div class="footer-links">
                 <div class="link-col">
-                    <h4>Produto</h4>
-                    <a href="#infra">Sua Infra</a>
-                    <a href="#features">Features</a>
-                    <a href="#web-automation">Automação Web</a>
-                    <a href="#api-mock">API & Mocks</a>
-                    <a href="#pricing">Preços</a>
+                    <h4>Soluções</h4>
+                    <a href="#web-automation">Automação Web & IA</a>
+                    <a href="#api-mock">Validação de API & Mocks</a>
+                    <a href="#performance">Testes de Performance</a>
+                    <a href="#features">Recursos da Plataforma</a>
                 </div>
                 <div class="link-col">
-                    <h4>Recursos</h4>
-                    <a href="#">Documentação</a>
-                    <a href="#">Tutoriais</a>
-                    <a href="#">Changelog</a>
+                    <h4>Implantação</h4>
+                    <a href="#infra">Infraestrutura On-Premise</a>
+                    <a href="flow-qa-install.zip?v=2.2" download="flow-qa-install.zip">Download Docker (.zip)</a>
+                    <a href="#pricing">Planos & Licenças</a>
                 </div>
                 <div class="link-col">
-                    <h4>Legal</h4>
-                    <a href="#">Termos de Uso</a>
-                    <a href="#">Privacidade</a>
-                </div>
-                <div class="link-col">
-                    <h4>Contato</h4>
+                    <h4>Contato Direto</h4>
                     <a href="https://wa.me/5519989624096" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 8px;">
                         <i data-lucide="message-circle" style="width: 15px; height: 15px; color: #25d366;"></i> (19) 98962-4096
                     </a>
