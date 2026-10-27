@@ -1010,6 +1010,42 @@ h2 {
     white-space: nowrap;
 }
 
+/* Web Automation Video Showcase */
+.web-auto-video-wrapper {
+    margin-top: 56px;
+    perspective: 1000px;
+    width: 100%;
+}
+
+.video-mockup {
+    width: 100%;
+    border-radius: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55), 0 0 40px rgba(139, 92, 246, 0.12);
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.video-mockup:hover {
+    border-color: rgba(139, 92, 246, 0.45);
+    box-shadow: 0 35px 70px rgba(0, 0, 0, 0.65), 0 0 50px rgba(139, 92, 246, 0.22);
+}
+
+.video-mockup-body {
+    position: relative;
+    width: 100%;
+    background: #000;
+    line-height: 0;
+}
+
+.web-auto-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0 0 15px 15px;
+}
+
 /* Performance Showcase */
 .performance-showcase {
     padding: 100px 0;
