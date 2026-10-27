@@ -121,84 +121,55 @@
                 <p>Transforme seus testes manuais no navegador em fluxos automatizados em segundos e deixe a Inteligência Artificial consertar seletores quebrados sozinha.</p>
             </div>
 
-            <!-- 3-Step Visual Journey -->
+            <!-- 3-Step Visual Journey & Feature Cards -->
             <div class="web-journey-steps reveal">
+                <!-- Step 1: Gravação Manual com Extensão -->
                 <div class="journey-step">
                     <div class="step-badge">1</div>
-                    <div class="step-icon"><i data-lucide="disc"></i></div>
-                    <h4>Grave sua Execução Manual</h4>
-                    <p>Ative a extensão do Flow-QA no navegador e execute o fluxo manualmente como um usuário real.</p>
+                    <div class="step-icon step-icon-1"><i data-lucide="chrome"></i></div>
+                    <h4>1. Grave sua Execução Manual</h4>
+                    <p class="journey-desc">
+                        Não perca horas inspecionando elementos no DOM ou escrevendo scripts do zero. A extensão oficial do Flow-QA grava toda a sua jornada no navegador como um usuário real.
+                    </p>
+                    <ul class="journey-list">
+                        <li><i data-lucide="check"></i> <span>Captura inteligente de cliques, digitações, selects, modais e navegações</span></li>
+                        <li><i data-lucide="check"></i> <span>Extração automática de múltiplos seletores resilientes (ID, data-testid, CSS, XPath e texto)</span></li>
+                        <li><i data-lucide="check"></i> <span>Criação rápida de asserções visuais e validações de texto em tempo de gravação</span></li>
+                    </ul>
                 </div>
+
                 <div class="journey-arrow"><i data-lucide="arrow-right"></i></div>
+
+                <!-- Step 2: Vira Automação Instantânea -->
                 <div class="journey-step">
                     <div class="step-badge">2</div>
-                    <div class="step-icon"><i data-lucide="workflow"></i></div>
-                    <h4>Vira Automação Instantânea</h4>
-                    <p>Cada clique, digitação e validação é convertido automaticamente em cards visuais prontos para rodar.</p>
+                    <div class="step-icon step-icon-2"><i data-lucide="workflow"></i></div>
+                    <h4>2. Vira Automação Instantânea</h4>
+                    <p class="journey-desc">
+                        Cada ação gravada é transformada com 1 clique em um fluxo visual de cards parametrizáveis, prontos para execução imediata em Playwright.
+                    </p>
+                    <ul class="journey-list">
+                        <li><i data-lucide="check"></i> <span>Geração instantânea de cenários E2E sem dependência de código manual</span></li>
+                        <li><i data-lucide="check"></i> <span>Injeção de variáveis de ambiente dinâmicas e gerador de massa de teste (Faker)</span></li>
+                        <li><i data-lucide="check"></i> <span>Ambiente visual para reorganizar passos, adicionar delays e ramificar fluxos</span></li>
+                    </ul>
                 </div>
+
                 <div class="journey-arrow"><i data-lucide="arrow-right"></i></div>
+
+                <!-- Step 3: Auto-Correção em Tempo Real -->
                 <div class="journey-step">
                     <div class="step-badge">3</div>
-                    <div class="step-icon"><i data-lucide="wand-2"></i></div>
-                    <h4>Auto-Correção em Tempo Real</h4>
-                    <p>Se o front-end mudar, a IA detecta o elemento alterado, atualiza o seletor e mantém o teste passando.</p>
-                </div>
-            </div>
-
-            <!-- Detailed Feature Cards -->
-            <div class="api-mock-grid reveal">
-                <!-- Card 1: Extensão Gravadora -->
-                <div class="api-mock-card web-auto-card">
-                    <div>
-                        <div class="f-icon" style="background: linear-gradient(135deg, #f43f5e, #fb923c);"><i data-lucide="chrome"></i></div>
-                        <h3>Extensão Recorder: Do Manual ao Automatizado</h3>
-                        <p class="api-mock-desc">
-                            Não perca horas inspecionando elementos no DOM ou escrevendo scripts do zero. Nossa extensão grava toda a sua jornada manual no navegador e constrói a automação para você.
-                        </p>
-                        <ul class="api-mock-list">
-                            <li><i data-lucide="check"></i> Captura inteligente de cliques, inputs, selects, modais e navegações</li>
-                            <li><i data-lucide="check"></i> Extração automática de múltiplos seletores resilientes (ID, data-testid, CSS, XPath e texto)</li>
-                            <li><i data-lucide="check"></i> Transforma cenários manuais em fluxos visuais reutilizáveis com 1 clique</li>
-                            <li><i data-lucide="check"></i> Criação rápida de asserções visuais e validações de texto durante a gravação</li>
-                        </ul>
-                    </div>
-                    <div class="web-demo-terminal">
-                        <div class="demo-term-header">
-                            <span class="rec-dot"></span> Gravando sessão manual no navegador...
-                        </div>
-                        <div class="demo-term-body">
-                            <div class="demo-step-line"><i data-lucide="mouse-pointer"></i> <span>Clique em <code>button[data-testid="login-btn"]</code></span> <strong class="tag-ok">Card Criado</strong></div>
-                            <div class="demo-step-line"><i data-lucide="keyboard"></i> <span>Digitar <code>usuario@empresa.com</code> no campo E-mail</span> <strong class="tag-ok">Card Criado</strong></div>
-                            <div class="demo-step-line"><i data-lucide="check-circle-2"></i> <span>Validar texto visível <code>"Painel Principal"</code></span> <strong class="tag-ok">Card Criado</strong></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2: Self-Healing / Auto-Correção -->
-                <div class="api-mock-card web-auto-card">
-                    <div>
-                        <div class="f-icon" style="background: linear-gradient(135deg, #8b5cf6, #3b82f6);"><i data-lucide="sparkles"></i></div>
-                        <h3>Auto-Correção de Testes Quebrados (Self-Healing)</h3>
-                        <p class="api-mock-desc">
-                            Diga adeus aos falsos negativos causados por refatorações de layout. Quando um seletor falha, nossa IA analisa a árvore do DOM e recupera o teste automaticamente sem intervenção humana.
-                        </p>
-                        <ul class="api-mock-list">
-                            <li><i data-lucide="check"></i> Diagnóstico instantâneo quando um ID, classe CSS ou XPath deixa de existir</li>
-                            <li><i data-lucide="check"></i> Busca contextual e semântica na página para localizar o novo elemento correspondente</li>
-                            <li><i data-lucide="check"></i> Atualização automática do seletor no card do teste sem interromper a execução</li>
-                            <li><i data-lucide="check"></i> Registro detalhado no relatório mostrando o seletor antigo e o seletor corrigido pela IA</li>
-                        </ul>
-                    </div>
-                    <div class="web-demo-terminal healing">
-                        <div class="demo-term-header healing-header">
-                            <i data-lucide="shield-alert"></i> Seletor alterado detectado na execução
-                        </div>
-                        <div class="demo-term-body">
-                            <div class="demo-step-line broken"><i data-lucide="x-circle"></i> <span>Seletor antigo falhou: <code>#btn-submit-old</code></span></div>
-                            <div class="demo-step-line ai-fix"><i data-lucide="wand-2"></i> <span>IA analisou o DOM e localizou: <code>button.checkout-confirm</code></span></div>
-                            <div class="demo-step-line healed"><i data-lucide="check-circle-2"></i> <span>Seletor auto-corrigido e teste concluído com sucesso!</span> <strong class="tag-healed">Self-Healed ✨</strong></div>
-                        </div>
-                    </div>
+                    <div class="step-icon step-icon-3"><i data-lucide="sparkles"></i></div>
+                    <h4>3. Auto-Correção em Tempo Real</h4>
+                    <p class="journey-desc">
+                        Diga adeus aos testes quebrados por refatorações de layout. Quando um seletor muda, a IA analisa o DOM e recupera o teste automaticamente.
+                    </p>
+                    <ul class="journey-list">
+                        <li><i data-lucide="check"></i> <span>Diagnóstico em tempo real quando um ID, classe CSS ou XPath deixa de existir</span></li>
+                        <li><i data-lucide="check"></i> <span>Busca contextual semântica e heurística para localizar o novo elemento</span></li>
+                        <li><i data-lucide="check"></i> <span>Auto-atualização do seletor no card com relatório detalhado de cura</span></li>
+                    </ul>
                 </div>
             </div>
 
